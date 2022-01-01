@@ -12,7 +12,7 @@ def detect(word):
     'content-type': "application/x-www-form-urlencoded",
     'accept-encoding': "application/gzip",
     'x-rapidapi-host': "google-translate1.p.rapidapi.com",
-    'x-rapidapi-key': "put your key"
+    'x-rapidapi-key': "54a24f1846msh64def632ccd4350p1e97e4jsn1749b28f76ab"
     }
 
     response = requests.request("POST", url, data=payload, headers=headers)
@@ -33,7 +33,7 @@ def translate(t,tarlang,sorlan):
         'content-type': "application/x-www-form-urlencoded",
         'accept-encoding': "application/gzip",
         'x-rapidapi-host': "google-translate1.p.rapidapi.com",
-        'x-rapidapi-key': "put your key"
+        'x-rapidapi-key': "54a24f1846msh64def632ccd4350p1e97e4jsn1749b28f76ab"
         }
     response = requests.request("POST",url, data=payload, headers=headers)
     result = json.loads(response.text) 
